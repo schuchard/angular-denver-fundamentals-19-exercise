@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Inject } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
 import { combineLatest, map } from 'rxjs/operators';
 import { GroupService } from './group.service';
@@ -12,7 +12,7 @@ export class AppComponent {
   people$ = new BehaviorSubject(0);
   groups$ = new BehaviorSubject(0);
 
-  constructor(private groupService: GroupService) {}
+  constructor(@Inject(GroupService) private groupService) {}
 
   displayData$ = this.people$.pipe(
     combineLatest(this.groups$),
