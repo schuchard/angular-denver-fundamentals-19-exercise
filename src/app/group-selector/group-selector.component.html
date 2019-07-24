@@ -1,21 +1,23 @@
 <div class="container m-8 flex flex-row">
   <div class="control flex flex-col m-8 p-4 rounded">
-    <h2 class="text-center">People</h2>
+    <h2 class="text-center mb-3">People: {{ people }}</h2>
     <mat-slider
       thumbLabel
       tickInterval="1"
       min="1"
       max="100"
+      [value]="people"
       (input)="sliderChange('people', $event)"
     ></mat-slider>
   </div>
   <div class="control flex flex-col m-8 p-4 rounded">
-    <h2 class="text-center">Groups of</h2>
+    <h2 class="text-center mb-3">Groups of: {{ groups }}</h2>
     <mat-slider
       thumbLabel
       tickInterval="1"
       min="1"
       max="10"
+      [value]="groups"
       (input)="sliderChange('groups', $event)"
     ></mat-slider>
   </div>
