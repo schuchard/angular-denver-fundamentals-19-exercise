@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="control">
+    <h2>People</h2>
+    <mat-slider
+      thumbLabel
+      tickInterval="1"
+      min="1"
+      max="100"
+      (input)="sliderChange('people', $event)"
+    ></mat-slider>
+  </div>
+  <div class="control">
+    <h2>Groups</h2>
+    <mat-slider
+      thumbLabel
+      tickInterval="1"
+      min="1"
+      max="10"
+      (input)="sliderChange('groups', $event)"
+    ></mat-slider>
+  </div>
+</div>
