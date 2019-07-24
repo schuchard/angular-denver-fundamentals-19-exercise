@@ -1,6 +1,6 @@
-<div class="container">
-  <div class="control">
-    <h2>People</h2>
+<div class="container m-8 flex flex-row">
+  <div class="control flex flex-col m-8 p-4 rounded">
+    <h2 class="text-center">People</h2>
     <mat-slider
       thumbLabel
       tickInterval="1"
@@ -9,8 +9,8 @@
       (input)="sliderChange('people', $event)"
     ></mat-slider>
   </div>
-  <div class="control">
-    <h2>Groups of</h2>
+  <div class="control flex flex-col m-8 p-4 rounded">
+    <h2 class="text-center">Groups of</h2>
     <mat-slider
       thumbLabel
       tickInterval="1"

@@ -1,17 +1,6 @@
-.container {
-  display: flex;
-}
+@import '~src/variables';
 
 .control {
-  display: flex;
-  flex-direction: column;
   flex-basis: 50%;
-  box-shadow: 0 0 9px 6px #00000017;
-  border-radius: 4px;
-  margin: 25px;
-  padding: 12px;
-
-  h2 {
-    text-align: center;
-  }
+  background-color: $light-blue;
 }

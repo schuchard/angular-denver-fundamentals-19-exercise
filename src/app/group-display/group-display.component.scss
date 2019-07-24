@@ -1,3 +1,5 @@
+@import '~src/variables';
+
 .container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -6,6 +8,7 @@
   .group {
     cursor: pointer;
     transition: 0.4s transform;
+    background-color: $light-blue;
 
     &:hover {
       transform: translatey(-6px);
